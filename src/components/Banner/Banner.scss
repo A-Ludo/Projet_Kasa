@@ -1,0 +1,36 @@
+.banner-container {
+	height: 223px;
+	@include big-radius;
+	@include flex-banner;
+
+	@media screen and (max-width: $breakpoint-desktop) {
+		height: 111px;
+		@include small-radius;
+		@include flex-banner;
+	}
+}
+
+.banner-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	@include flex-center;
+	@include WH-full;
+	@include font(48px, 500);
+	@include big-radius;
+
+	@media screen and (max-width: $breakpoint-desktop) {
+		top: 28%;
+		left: 5.5%;
+		right: 32.5%;
+		bottom: 80%;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 100%;
+		color: $tertiary-color;
+		width: 217px;
+		height: 48px;
+		@include small-radius;
+	}
+}
