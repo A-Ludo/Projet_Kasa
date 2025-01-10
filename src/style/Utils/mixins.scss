@@ -10,6 +10,14 @@
     line-height: 142.6%;
 }
 
+@mixin font-right($size) {
+    font-size: $size;
+    font-style: normal;
+    font-weight: 500;
+    text-align: right;
+    line-height: 142.6%;
+}
+
 @mixin small-radius {
     border-radius: 10px;
 }
@@ -24,6 +32,12 @@
     width: 100%;
     @include bkgrd($banner-background);
     margin-top: 20px;
+}
+
+@mixin flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 @mixin flex-center {
