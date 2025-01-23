@@ -2,7 +2,6 @@
 	height: 223px;
 	@include big-radius;
 	@include flex-banner;
-
 	@media screen and (max-width: $breakpoint-desktop) {
 		height: 111px;
 		@include small-radius;
@@ -15,6 +14,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
+	color: $tertiary-color;
 	@include flex-center;
 	@include WH-full;
 	@include font(48px, 500);
@@ -28,7 +28,6 @@
 		font-size: 24px;
 		font-weight: 500;
 		line-height: 100%;
-		color: $tertiary-color;
 		width: 217px;
 		height: 48px;
 		@include small-radius;

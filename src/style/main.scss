@@ -1,14 +1,4 @@
-@import "./Base/base";
-
 @import "./Utils/variables";
 @import "./Utils/mixins";
 
-@import "../components/AboutBanner/AboutBanner";
-@import "../components/Banner/Banner";
-@import "../components/Carrousel/Carrousel";
-@import "../components/Collapse/Collapse";
-@import "../components/ErrorPage/ErrorPage";
-@import "../components/Footer/Footer";
-@import "../components/Header/Header";
-@import "../components/Nav/Nav";
-@import "../components/Rate/Rate";
+@import "./Base/base";

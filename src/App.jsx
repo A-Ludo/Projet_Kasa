@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import Header from "./components/Header/Header";
-import FicheLogement from "./pages/FicheLogement/FicheLogement";
+import FicheLogement from "./pages/FicheLogement";
 import Footer from "./components/Footer/Footer";
-import Error from "./pages/Error/Error.jsx";
+import Error from "./pages/Error.jsx";
 
 
 function App() {

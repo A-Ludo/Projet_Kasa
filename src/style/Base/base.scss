@@ -6,11 +6,10 @@
 }
 
 body {
-	@include body-position;
 	max-width: 100%;
 
 	@media screen and (max-width: $breakpoint-desktop) {
-		max-width: auto;
+		@include body-position;
 	}
 }
 
@@ -19,4 +18,20 @@ main {
 	@media screen and (max-width: $breakpoint-desktop) {
 		margin: 5%;
 	}
+}
+
+.fiche-container {
+	@include flex-center;
+	flex-direction: column;
+}
+
+.title-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.bl-msk {
+	background: $background-color;
+	mix-blend-mode: darken;
+	@include big-radius;
 }
