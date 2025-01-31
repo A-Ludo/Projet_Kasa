@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import FicheLogement from "./pages/FicheLogement";
 import Footer from "./components/Footer/Footer";
 import Error from "./pages/Error.jsx";
-
+import './style/main.scss'
 
 
 function App() {

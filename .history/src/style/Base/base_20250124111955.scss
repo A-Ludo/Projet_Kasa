@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+	max-width: 100%;
+
+	@media screen and (max-width: $breakpoint-desktop) {
+		@include body-position;
+	}
+}
+
+main {
+	margin: 0 100px;
+	@media screen and (max-width: $breakpoint-desktop) {
+		margin: 5%;
+	}
+}
+
+.fiche-container {
+	@include flex-center;
+	flex-direction: column;
+}
+
+.title-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.bl-msk {
+	background: $background-color;
+	mix-blend-mode: darken;
+	@include big-radius;
+}
+
+.nav-header {
+	@include flex-end;
+	text-transform: none;
+
+	@media screen and (max-width: $breakpoint-desktop) {
+		text-transform: uppercase;
+	}
+
+	&_link-home,
+	&_link-about {
+		@include font-right(24px);
+		color: $primary-color;
+		text-decoration: none;
+		padding-left: 3.5rem;
+
+		@media screen and (max-width: $breakpoint-desktop) {
+			@include font-right(12px);
+			padding-left: 0.8rem;
+		}
+
+		&:hover,
+		&:focus {
+			text-decoration-line: underline;
+		}
+	}
+}

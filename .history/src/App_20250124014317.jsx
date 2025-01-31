@@ -7,7 +7,6 @@ import Footer from "./components/Footer/Footer";
 import Error from "./pages/Error.jsx";
 
 
-
 function App() {
 
   return (
